@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+
+RewriteCond %{HTTP_REFERER} !^http://(www\.)YOURSITE.com/.*$ [NC]
+
+RewriteRule \.(gif|jpg|jpeg|mp3|png|pdf|doc|docx|ppt|pptx|xls|xlsx|mp4|flv|zip)$ - [F]
